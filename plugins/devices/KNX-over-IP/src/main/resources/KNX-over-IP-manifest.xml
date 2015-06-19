@@ -1,0 +1,9 @@
+<config>
+    <properties>
+        <property name="description"                       value="KNX_TEST"/>
+        <property name="category"                       value="devel"/>
+        <property name="short-name"                       value="knx"/>
+    </properties>
+</config>
+
+                

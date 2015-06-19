@@ -29,18 +29,18 @@ import com.google.inject.Inject;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-public class HelloWorld
+public class KnxTest
         extends Protocol {
 
-    private static final Logger LOG = Logger.getLogger(HelloWorld.class.getName());
+    private static final Logger LOG = Logger.getLogger(KnxTest.class.getName());
     final int POLLING_WAIT;
     
     @Inject
     private ThingRepository thingsRepository;
 
-    public HelloWorld() {
+    public KnxTest() {
         //every plugin needs a name and a manifest XML file
-        super("HelloWorld", "/hello-world/hello-world-manifest.xml");
+        super("KNX-over-IP", "/KNX-over-IP/KNX-over-IP-manifest.xml");
         //read a property from the manifest file below which is in
         //FREEDOMOTIC_FOLDER/plugins/devices/com.freedomotic.hello/hello-world.xml
         POLLING_WAIT = configuration.getIntProperty("time-between-reads", 2000);
@@ -75,12 +75,12 @@ public class HelloWorld
 
     @Override
     protected void onStart() {
-        LOG.info("HelloWorld plugin is started");
+        LOG.info("KNX plugin is started");
     }
 
     @Override
     protected void onStop() {
-        LOG.info("HelloWorld plugin is stopped ");
+        LOG.info("KNX plugin is stopped ");
     }
 
     @Override
