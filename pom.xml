@@ -24,6 +24,8 @@
         <module>tools</module>
         <module>plugins</module>
         <module>framework</module>
+        <module>plugins/devices/hello-world_1</module>
+        <module>plugins/devices/KNX-over-IP</module>
     </modules>
     
     <distributionManagement>
