@@ -10,7 +10,7 @@
     <artifactId>KNX-over-IP</artifactId>
     <packaging>jar</packaging>
     <name>KNX-over-IP</name>
-    <version>3.0</version>
+    <version>0.1</version>
     <developers>
         <developer>
             <id>enrico</id>
@@ -56,6 +56,11 @@
             <artifactId>freedomotic-core</artifactId>
             <version>${project.parent.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.calimero</groupId>
+            <artifactId>calimero-core</artifactId>
+            <version>2.3-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
